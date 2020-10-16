@@ -1,4 +1,10 @@
-﻿using System;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+using System;
 
 namespace exercise_08
 {
@@ -7,7 +13,11 @@ namespace exercise_08
         public static void Main(string[] args)
         {
             // Write your code here:
+            Console.WriteLine("What is your name?");
+            string name = Console.ReadLine();
+            Console.WriteLine("Hello "+name+"!");
 
+            
         }
     }
 }
