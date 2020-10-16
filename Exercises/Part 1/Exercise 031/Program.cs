@@ -15,8 +15,7 @@ namespace exercise_31
             } else {
             Console.WriteLine("It is odd.");
             }
-
-    }
+     }
                   
   }
 }
