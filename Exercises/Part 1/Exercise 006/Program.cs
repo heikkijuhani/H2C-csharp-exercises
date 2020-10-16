@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace exercise_06
 {
@@ -6,8 +6,10 @@ namespace exercise_06
     {
         public static void Main(string[] args)
         {
+           // Write your code here:
             Console.WriteLine("Give input!");
-            // Write your code here:
+            string input = Console.ReadLine();
+            Console.WriteLine(input);
             
         }
     }
