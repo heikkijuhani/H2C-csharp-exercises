@@ -1,4 +1,10 @@
-﻿using System;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+using System;
 
 namespace exercise_11
 {
@@ -6,9 +12,9 @@ namespace exercise_11
     {
         public static void Main(string[] args)
         {
-            int dayCount = 100;
-            double hoursToLunch = 1;
-            string statement = "Are you sure?";
+            int dayCount = 200;
+            double hoursToLunch = 3.5;
+            string statement = "It sure is!";
 
             // DO NOT TOUCH THESE!
             Console.WriteLine("Days to summer:");
@@ -20,4 +26,3 @@ namespace exercise_11
 
         }
     }
-}
