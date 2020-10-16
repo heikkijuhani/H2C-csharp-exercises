@@ -18,7 +18,6 @@ namespace exercise_09
             Console.WriteLine("That's interesting, tell me more");
             Console.ReadLine();
             Console.WriteLine("Thank you for sharing!");
-
             
         }
     }
