@@ -13,6 +13,7 @@ namespace exercise_34
             Console.WriteLine("Do you want to continue?");
             string answer = Console.ReadLine();
 
+
                 if (answer == "no") {
                 break;
                 }
