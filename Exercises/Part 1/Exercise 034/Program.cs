@@ -8,6 +8,18 @@ namespace exercise_34
     {
       // Write your code here:
 
+            while (true) {
+
+            Console.WriteLine("Do you want to continue?");
+            string answer = Console.ReadLine();
+
+                if (answer == "no") {
+                break;
+                }
+
+          
+            }
+
     }
   }
 }
