@@ -25,7 +25,7 @@ namespace exercise_37
                 }
           
            }
-           Console.ReadKey();
+           
 
     }
   }
