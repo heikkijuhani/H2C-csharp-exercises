@@ -8,12 +8,14 @@ namespace exercise_57
     {
       // write your code here
       // remember to include return (at the end)!
+      return (number1+number2+number3+number4);
     }
 
     public static void Main(String[] args)
     {
       int answer = Sum(4, 3, 6, 1);
       Console.WriteLine("Sum: " + answer);
+            
     }
   }
 }
