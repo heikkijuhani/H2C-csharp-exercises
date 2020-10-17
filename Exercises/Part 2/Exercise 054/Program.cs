@@ -9,7 +9,7 @@ namespace exercise_54
       // Call your method here:
 
             DivisibleByThreeInRange(2, 10);
-            Console.ReadKey();
+          
 
     }
 
