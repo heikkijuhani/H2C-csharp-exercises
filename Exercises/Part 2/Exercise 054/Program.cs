@@ -8,9 +8,20 @@ namespace exercise_54
     {
       // Call your method here:
 
+            DivisibleByThreeInRange(2, 10);
+            Console.ReadKey();
+
     }
 
     // Write your method here:
+
+        public static void DivisibleByThreeInRange(int beginning, int end){
+            for(int i = beginning; i <= end; i++) {
+                if (i%3 == 0){
+                    Console.WriteLine(i);
+                }
+            }
+        }
 
   }
 }
