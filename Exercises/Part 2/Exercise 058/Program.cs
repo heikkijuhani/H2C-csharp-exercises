@@ -8,7 +8,7 @@ namespace exercise_58
     {
       int answer = Smallest(2, 7);
       Console.WriteLine("Smallest: " + answer);
-            Console.ReadKey();
+            
     }
 
     // Write your method here:
