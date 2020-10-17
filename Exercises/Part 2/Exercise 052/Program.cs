@@ -7,10 +7,16 @@ namespace exercise_52
     public static void Main(String[] args)
     {
       // Call your method here:
-
+      PrintFromNumberToOne(5);
+     
     }
 
     // Write your method here:
+    public static void PrintFromNumberToOne(int number){
+        for (int i=number; i >= 1; i--) {
+            Console.WriteLine(i);
+            }
+        }
 
   }
 }
