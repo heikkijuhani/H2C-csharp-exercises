@@ -13,10 +13,18 @@ namespace exercise_71
         int input = Convert.ToInt32(Console.ReadLine());
         if (input == -1)
         {
+          Console.WriteLine("Search for?");
+          int number = Convert.ToInt32(Console.ReadLine());
+                for (int i = 0; i < list.Count; i++){
+                    if (list[i] == number){
+                        Console.WriteLine(number+" is at index "+i);
+                                }}
+
           break;
         }
         list.Add(input);
       }
+
 
     }
   }
