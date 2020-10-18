@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace exercise_73
 {
@@ -13,10 +14,13 @@ namespace exercise_73
         int input = Convert.ToInt32(Console.ReadLine());
         if (input == -1)
         {
+          Console.WriteLine("Sum: "+list.Sum());
           break;
         }
         list.Add(input);
       }
+
+      Console.ReadKey();
 
     }
   }
