@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace exercise_70
 {
@@ -13,10 +14,13 @@ namespace exercise_70
         int input = Convert.ToInt32(Console.ReadLine());
         if (input == -1)
         {
+          Console.WriteLine("The grEatest number: "+list.Max());
           break;
         }
         list.Add(input);
+                
       }
+
     }
   }
 }
