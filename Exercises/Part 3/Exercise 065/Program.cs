@@ -13,11 +13,12 @@ namespace exercise_65
         string input = Console.ReadLine();
         if (input == "")
         {
+          Console.WriteLine("In total: "+list.Count);
           break;
         }
         list.Add(input);
       }
-
+ 
     }
   }
 }
