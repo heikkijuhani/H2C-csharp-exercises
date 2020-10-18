@@ -13,7 +13,11 @@ namespace exercise_68
         int input = Convert.ToInt32(Console.ReadLine());
         if (input == -1)
         {
-          break;
+            for(int i = 0; i < list.Count; i++){
+                    Console.WriteLine(list[i]);
+                            }
+          
+         break;
         }
         list.Add(input);
       }
