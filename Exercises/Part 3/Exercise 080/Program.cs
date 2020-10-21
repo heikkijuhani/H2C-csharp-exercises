@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace exercise_80
 {
@@ -15,7 +16,7 @@ namespace exercise_80
 
     public static int SumOfNumbersInArray(int[] numbers) {
 
-      return 0;
+      return numbers.Sum();
     }
 
   }
