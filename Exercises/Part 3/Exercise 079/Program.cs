@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace exercise_79
 {
@@ -22,6 +23,14 @@ namespace exercise_79
       int searching = Convert.ToInt32(Console.ReadLine());
 
       // Implement the search functionality here
+      
+      if (array.Contains<int>(searching)){
+            Console.WriteLine(searching+" is at index "+Array.IndexOf(array, searching));
+        } else {
+            Console.WriteLine(searching+" was not found");}
+
+
+      Console.ReadKey();
 
     }
 
