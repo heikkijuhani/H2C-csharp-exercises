@@ -13,7 +13,7 @@ namespace exercise_83
         
         Console.WriteLine(wordThreeTimes);
          
-            Console.ReadKey();
+  
     }
 
   }
