@@ -29,9 +29,6 @@ namespace exercise_79
         } else {
             Console.WriteLine(searching+" was not found");}
 
-
-      Console.ReadKey();
-
     }
 
   }
