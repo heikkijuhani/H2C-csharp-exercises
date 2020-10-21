@@ -8,13 +8,17 @@ namespace exercise_81
     public static void Main(string[] args)
     {
       // You can test your method here
-
+      int[] array = {5, 1, 3, 4, 2};
+      PrintNEatly(array);
+            
     }
 
-    public static void PrintNeatly(int[] array)
+    public static void PrintNEatly(int[] array)
     {
+            Console.Write(String.Join(", ", array));
+            }
 
     }
   }
-}
+
 
