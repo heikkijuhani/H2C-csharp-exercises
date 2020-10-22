@@ -14,7 +14,6 @@ namespace exercise_84
             Console.WriteLine("Try again!");
             }
 
-     Console.ReadKey();
     }
   }
 }
