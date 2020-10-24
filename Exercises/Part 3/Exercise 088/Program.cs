@@ -12,7 +12,7 @@ namespace exercise_88
             string input = Console.ReadLine();
               if(input != ""){
                 string[] words = input.Split( );
-                Console.WriteLine(words[0]);
+                Console.WriteLine(words[words.Length-1]);
                                 
               } else {
                 break;
