@@ -1,6 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 
-namespace exercise_93
+namespace Exercise_93
 {
   class Program
   {
@@ -8,8 +11,15 @@ namespace exercise_93
     {
       // DO NOT TOUCH THE OTHER FILE!
       // Do your code here!
+            
+            
+           Account heikkiKumparesAccount = new Account("Heikki Kumpare's account", 100.00);
+           heikkiKumparesAccount.Deposit(20.00);
+            Console.WriteLine(heikkiKumparesAccount.balance);
 
+            Console.ReadKey();
     }
+
   }
 }
 
