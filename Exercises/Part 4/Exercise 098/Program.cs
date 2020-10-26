@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Exercise_098;
+using System;
 
 namespace exercise_98
 {
@@ -9,6 +10,10 @@ namespace exercise_98
       // Create Product.cs and follow the instructions.
       // You can test your class with this.
       
+            Product banana = new Product("Banana", 1.1, 13);
+
+            banana.PrintProduct();
+
 
     }
   }
