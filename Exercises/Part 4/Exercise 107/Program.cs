@@ -1,4 +1,5 @@
 ﻿using System;
+using Exercise_107;
 
 namespace exercise_107
 {
@@ -14,6 +15,8 @@ namespace exercise_107
 
       card.DrinkCoffee();
       Console.WriteLine(card);
+
+            Console.ReadKey();
     }
   }
 }
