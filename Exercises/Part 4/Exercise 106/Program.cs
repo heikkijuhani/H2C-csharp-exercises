@@ -1,4 +1,5 @@
 ﻿using System;
+using Exercise_106;
 
 namespace exercise_106
 {
@@ -8,6 +9,7 @@ namespace exercise_106
     {
       PaymentCard card = new PaymentCard(50);
       Console.WriteLine(card);
+            Console.ReadKey();
     }
   }
 }

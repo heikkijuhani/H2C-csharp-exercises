@@ -28,9 +28,7 @@ namespace exercise_105
     {
             count++;
             sum = sum + number;
-            
-           
-      
+             
     }
 
   }
