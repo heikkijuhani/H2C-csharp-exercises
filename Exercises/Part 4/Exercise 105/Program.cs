@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace exercise_105
 {
@@ -11,8 +12,13 @@ namespace exercise_105
       statistics.AddNumber(5);
       statistics.AddNumber(1);
       statistics.AddNumber(2);
+      
       Console.WriteLine("Count: " + statistics.count);
       Console.WriteLine("Sum: " + statistics.sum);
+
+
+
+            Console.ReadKey();
     }
   }
 }
