@@ -1,4 +1,5 @@
 ﻿using System;
+using Exercise_102;
 
 namespace exercise_102
 {
@@ -17,6 +18,9 @@ namespace exercise_102
       Console.WriteLine("Full! Value: " + g.value);
       g.Decrease();
       Console.WriteLine("Not full! Value: " + g.value);
+
+
+            Console.ReadKey();
     }
   }
 }
