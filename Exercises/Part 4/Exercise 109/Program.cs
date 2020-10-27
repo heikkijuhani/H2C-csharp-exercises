@@ -1,4 +1,5 @@
 ﻿using System;
+using Exercise_109;
 
 namespace exercise_109
 {
@@ -17,6 +18,8 @@ namespace exercise_109
 
       card.AddMoney(-10);
       Console.WriteLine(card);
+
+            Console.ReadKey();
     }
   }
 }
