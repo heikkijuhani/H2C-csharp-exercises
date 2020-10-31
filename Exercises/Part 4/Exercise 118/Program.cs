@@ -1,46 +1,57 @@
-﻿using System;
-using System.IO;
-
-namespace exercise_118
+﻿namespace exercise_118
 {
-  class Program
-  {
-    public static void Main(string[] args)
+    using System;
+    using System.Collections.Generic;
+    using System.IO;
+
+    /// <summary>
+    /// Defines the <see cref="Program" />.
+    /// </summary>
+    internal class Program
     {
-      // Ask the user for the file name and print the content of the file
-      Console.WriteLine("Name of the file:");
-      string file = Console.ReadLine();
-
-      // DO NOT TOUCH THE CODE ABOVE!
-      // implement reading the file here;
-      
-
-
-
-      // DO NOT TOUCH THE CODE BELOW!
-      Console.WriteLine("");
-
-      Console.WriteLine("Enter names, an empty line quits.");
-      while (true)
-      {
-        string name = Console.ReadLine();
-        if (name == "")
+        /// <summary>
+        /// The Main.
+        /// </summary>
+        /// <param name="args">The args<see cref="string[]"/>.</param>
+        public static void Main(string[] args)
         {
-          break;
-        }
+            // Ask the user for the file name and print the content of the file
+            Console.WriteLine("Name of the file:");
+            string file = Console.ReadLine();
 
-        if (names.Contains(name))
-        {
-          Console.WriteLine("The name is on the list.");
-        }
-        else
-        {
-          Console.WriteLine("The name is not on the list.");
-        }
-      }
+            // DO NOT TOUCH THE CODE ABOVE!
+            // implement reading the file here;
 
-      Console.WriteLine("Thank you!");
+            List<String> names = new List<string>();
+            string[] lines = File.ReadAllLines(file);
+            for (int i = 0; i < lines.Length; i++)
 
+            {
+                names.Add(lines[i]);
+            }
+
+            // DO NOT TOUCH THE CODE BELOW!
+            Console.WriteLine("");
+            Console.WriteLine("Enter names, an empty line quits.");
+            while (true)
+            {
+                string name = Console.ReadLine();
+                if (name == "")
+                {
+                    break;
+                }
+
+                if (names.Contains(name))
+                {
+                    Console.WriteLine("The name is on the list.");
+                }
+                else
+                {
+                    Console.WriteLine("The name is not on the list.");
+                }
+            }
+
+            Console.WriteLine("Thank you!");
+        }
     }
-  }
 }
