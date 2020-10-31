@@ -3,6 +3,7 @@
     using System;
     using System.Collections.Generic;
     using System.IO;
+    using System.Linq;
 
     internal class Program
     {
@@ -15,13 +16,14 @@
             // DO NOT TOUCH THE CODE ABOVE!
             // implement reading the file here;
 
-            List<String> names = new List<string>();
-            string[] lines = File.ReadAllLines(file);
-            for (int i = 0; i < lines.Length; i++)
+            List<String> names = File.ReadAllLines(file).ToList();
 
+            // Oma listan koetulostus
+            for (int i = 0; i < names.Count; i++)
             {
-                names.Add(lines[i]);
+                Console.Write(names[i]+"| ");
             }
+           
 
             // DO NOT TOUCH THE CODE BELOW!
             Console.WriteLine("");
