@@ -4,15 +4,8 @@
     using System.Collections.Generic;
     using System.IO;
 
-    /// <summary>
-    /// Defines the <see cref="Program" />.
-    /// </summary>
     internal class Program
     {
-        /// <summary>
-        /// The Main.
-        /// </summary>
-        /// <param name="args">The args<see cref="string[]"/>.</param>
         public static void Main(string[] args)
         {
             // Ask the user for the file name and print the content of the file
