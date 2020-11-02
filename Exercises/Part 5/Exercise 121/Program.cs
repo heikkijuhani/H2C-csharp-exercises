@@ -1,4 +1,5 @@
 ﻿using System;
+using Exercise_121;
 
 namespace exercise_121
 {
@@ -6,7 +7,7 @@ namespace exercise_121
   {
     public static void Main(string[] args)
     {
-      Fitbyte assistant = new Fitbyte(30, 60);
+      Fitbyte assistant = new Fitbyte(37, 60);
       double percentage = 0.5;
 
       while (percentage < 1.0)
@@ -15,6 +16,8 @@ namespace exercise_121
         Console.WriteLine("Target " + (percentage * 100) + "% of maximum: " + target);
         percentage = percentage + 0.1;
       }
+
+            Console.ReadKey();
     }
   }
 }
