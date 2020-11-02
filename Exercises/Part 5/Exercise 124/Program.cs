@@ -1,14 +1,20 @@
-﻿using System;
-
-namespace exercise_124
+﻿namespace exercise_124
 {
-  class Program
-  {
-    public static void Main(string[] args)
-    {
-      // Implement your program here!
+    using System;
 
-      
+    internal class Program
+    {
+        public static void Main(string[] args)
+        {
+            // Implement your program here!
+
+            string text = null;
+
+            if (text.Length == 0)
+            {
+                Console.WriteLine(text);
+            }
+            Console.ReadKey();
+        }
     }
-  }
 }
