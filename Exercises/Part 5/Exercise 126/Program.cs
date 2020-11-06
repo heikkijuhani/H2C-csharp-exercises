@@ -6,7 +6,9 @@ namespace exercise_126
   {
     public static void Main(string[] args)
     {
-      // Try your code here, if you want
-    }
+            // Try your code here, if you want
+
+            Console.ReadKey();
+        }
   }
 }
