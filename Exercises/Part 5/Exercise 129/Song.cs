@@ -1,3 +1,5 @@
+using System;
+
 namespace exercise_129
 {
 
@@ -23,9 +25,15 @@ namespace exercise_129
     // BEGIN SOLUTION
     public override bool Equals(object compared)
     {
- 
-      return false;
-    }
+        if (compared.Equals(this.artist))
+            {
+                return true;
+
+            } else { 
+                
+                return false;
+            }
+        }
     // END SOLUTION
 
   }
