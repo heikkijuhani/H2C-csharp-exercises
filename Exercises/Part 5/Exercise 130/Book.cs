@@ -1,3 +1,5 @@
+using System;
+
 namespace exercise_130
 {
 
@@ -18,8 +20,16 @@ namespace exercise_130
     // BEGIN SOLUTION
     public override bool Equals(object compared)
     {
+      if (this.Equals(compared))
+            {
+                return true;
 
-      return false;
+            } else
+            {
+                return false;
+            }
+
+      
     }
     // END SOLUTION
   }
