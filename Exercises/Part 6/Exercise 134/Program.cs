@@ -7,10 +7,15 @@ namespace exercise_134
   {
     public static void Main(string[] args)
     {
-      GradeRegister register = new GradeRegister();
+            GradeRegister register = new GradeRegister();
 
-      UserInterface ui = new UserInterface(register);
-      ui.Start();
-    }
+
+            UserInterface ui = new UserInterface(register);
+            ui.Start();
+
+            ui.ReadPoints();
+
+
+        }
   }
 }

@@ -1,17 +1,22 @@
 using System.Collections.Generic;
 using System;
+using System.Linq;
+
 public class GradeRegister
 {
   private List<int> grades;
+  private List<int> pointsList;
 
   public GradeRegister()
   {
     this.grades = new List<int>();
+    this.pointsList = new List<int>();
   }
 
   public void AddGradeBasedOnPoints(int points)
   {
     this.grades.Add(PointsToGrades(points));
+    this.pointsList.Add(points);
   }
 
   public int NumberOfGrades(int grade)
@@ -59,13 +64,43 @@ public class GradeRegister
 
   public double AverageOfGrades()
   {
-    // Hint! You don't need to round the -1, but you do need it for all the other results...
-    return Math.Round(-1.0, 2);
-  }
+        // Hint! You don't need to round the -1, but you do need it for all the other results...
+        if (this.grades.Count == 0)
+        {
+            return Math.Round(-1.0, 2);
+
+        } else { 
+        double average;
+        double count = this.grades.Count;
+        double sum = this.grades.Sum();
+
+        average = (sum * 1.0) / (count * 1.0);
+        double roundAverage = Math.Round(average, 2);
+
+        return roundAverage;
+        }
+    }
 
   public double AverageOfPoints()
   {
+        if(this.pointsList.Count == 0)
+        {
+            return Math.Round(-1.0, 2);
+        } else
+        {
+            double average;
+            double count = this.pointsList.Count;
+            double sum = this.pointsList.Sum();
 
-    return Math.Round(-1.0, 2);
+            average = (sum * 1.0) / (count * 1.0);
+            double roundAverage = Math.Round(average, 2);
+
+            return roundAverage;
+
+        }
+        
+
+
+    
   }
 }

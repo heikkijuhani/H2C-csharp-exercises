@@ -1,4 +1,7 @@
+using exercise_131;
+
 namespace exercise_131
+    
 {
   public class Item
   {
@@ -20,10 +23,18 @@ namespace exercise_131
     {
 
       //compare with Item.identifier
+      if(compared.Equals(this.identifier))
+            {
+                return false;
+                
+            } else
+            {
+                return true;
+            }
 
-      return false;
+
+      
       }
     }
 
   }
-}

@@ -25,7 +25,7 @@ namespace exercise_134
         string input = Console.ReadLine();
         if (input == "")
         {
-          break;
+                    break;
         }
         int score = Convert.ToInt32(input);
 
@@ -50,7 +50,10 @@ namespace exercise_134
 
         grade = grade - 1;
       }
-    }
+            Console.WriteLine("The average of grades: " + register.AverageOfPoints());
+            Console.WriteLine("The average of points: "+register.AverageOfGrades());
+            
+        }
     public static void PrintStars(int stars)
     {
       while (stars > 0)
