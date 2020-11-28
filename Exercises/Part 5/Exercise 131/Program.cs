@@ -32,22 +32,28 @@ namespace exercise_131
                 }
                 
                 Item item = new Item(identifier, name);
-
+                                                              
                 for (int i = 0; i < items.Count; i++)
                 {
-                    if (item.Equals(items[i])) {
-                        break;
+                
+                    Console.WriteLine("Käydään listaa läpi");
+
+                    if (item.Equals(items[i]))
+                    {
+                        Console.WriteLine("On jo listalla");
+                    
                     } else
                     {
+                        Console.WriteLine("Ei ollut, lisättiin");
                         items.Add(item);
                     }
                 }
-
                 
                 
-                
+                    
             }
 
+        
             
 
             // The end printing is ready, don't touch this

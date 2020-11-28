@@ -1,40 +1,66 @@
-using exercise_131;
-
 namespace exercise_131
-    
 {
-  public class Item
-  {
-
-    private string identifier;
-    private string name;
-
-    public Item(string identifier, string name)
+    public class Item
     {
-      this.identifier = identifier;
-      this.name = name;
-    }
-    public override string ToString()
-    {
-      return this.identifier + ": " + this.name;
-    }
+        private string identifier;
 
-    public override bool Equals(object compared)
-    {
+        private string name;
 
-      //compare with Item.identifier
-      if(compared.Equals(this.identifier))
+        public Item(string identifier, string name)
+        {
+            this.identifier = identifier;
+            this.name = name;
+        }
+
+        public override string ToString()
+        {
+            return this.identifier + ": " + this.name;
+        }
+
+        public override bool Equals(object compared)
+        {
+
+
+
+            //compare with Item.identifier
+
+
+
+            if (this == compared)
+
             {
-                return false;
-                
-            } else
-            {
+
                 return true;
+
             }
 
 
-      
-      }
-    }
 
-  }
+            if ((compared == null) || !this.GetType().Equals(compared.GetType()))
+
+            {
+
+                return false;
+
+            }
+
+
+
+            Item comparedItem = (Item)compared;
+
+
+
+            if (this.identifier == comparedItem.identifier)
+
+            {
+
+                return true;
+
+            }
+
+
+
+            return false;
+        }
+    }
+}
