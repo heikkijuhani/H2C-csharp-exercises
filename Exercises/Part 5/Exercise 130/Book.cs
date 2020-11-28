@@ -1,38 +1,48 @@
-using System;
-
 namespace exercise_130
 {
-
-
-  public class Book
-  {
-
-    private string name;
-    private int publicationYear;
-
-    public Book(string name, int publicationYear)
+    public class Book
     {
-      this.name = name;
-      this.publicationYear = publicationYear;
-    }
+        private string name;
 
+        private int publicationYear;
 
-    // BEGIN SOLUTION
-    public override bool Equals(object compared)
-    {
-      if (this.Equals(compared))
+        public Book(string name, int publicationYear)
+        {
+            this.name = name;
+            this.publicationYear = publicationYear;
+        }
+
+        public override bool Equals(object compared)
+        {
+            //compare with Item.identifier
+
+            if (this == compared)
             {
                 return true;
+            }
 
-            } else
+
+
+            if ((compared == null) || !this.GetType().Equals(compared.GetType()))
+
             {
                 return false;
             }
 
-      
+
+
+            Book comparedItem = (Book)compared;
+
+
+            if (this.name == comparedItem.name && this.publicationYear == comparedItem.publicationYear)
+
+            {
+
+                return true;
+
+            }
+
+            return false;
+        }
     }
-    // END SOLUTION
-  }
-
-
 }
