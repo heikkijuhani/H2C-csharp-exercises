@@ -39,7 +39,6 @@ namespace exercise_131
                 {
                     if (item.Equals(items[i]))
                     {
-                        Console.WriteLine("oli jo ja poistetaan");
                         items.RemoveAt(items.Count-1);
                     }
                 }
