@@ -15,20 +15,21 @@ namespace exercise_132
 
     public void Advance()
     {
-      // Do something here
+            // Do something here
+            this.day++;
 
     }
 
     public void Advance(int howManyDays)
     {
-      // Do something here
+            // Do something here
+            this.day = this.day + howManyDays;
     }
 
     public SimpleDate AfterNumberOfDays(int days)
     {
-      SimpleDate newDate = new SimpleDate(/* Do something here?*/);
-      // Do something here
-
+      SimpleDate newDate = new SimpleDate(days, 0, 0);
+      
       return newDate;
     }
 

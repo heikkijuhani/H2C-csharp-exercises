@@ -19,22 +19,8 @@ namespace exercise_131
 
         public override bool Equals(object compared)
         {
-
-
-
             //compare with Item.identifier
-
-
-
-            if (this == compared)
-
-            {
-
-                return true;
-
-            }
-
-
+                        
 
             if ((compared == null) || !this.GetType().Equals(compared.GetType()))
 
@@ -44,11 +30,7 @@ namespace exercise_131
 
             }
 
-
-
             Item comparedItem = (Item)compared;
-
-
 
             if (this.identifier == comparedItem.identifier)
 
@@ -57,8 +39,6 @@ namespace exercise_131
                 return true;
 
             }
-
-
 
             return false;
         }
